@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VirusNoir ngl</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="homepage">
+            <p>Sessions</p>
+            <div id="home-container">
+                <div id="users-list"></div>
+            </div>
+        </div>
+        <div class="sidebar">
+            <ul>
+                <li><a href="#" id="home">Home</a></li>
+            </ul>
+        </div>
+        <div class="sidebar-footer">
+            <img src="https://avatars.githubusercontent.com/u/67117684?v=4" alt="Logo" class="sidebar-footer-logo">
+            <a href="https://github.com/VirusNoirrr" class="sidebar-footer-link">&copy; VirusNoir</a>
+            <div class="flag-container">
+                <img src="https://images.emojiterra.com/google/noto-emoji/unicode-15.1/color/svg/1f1f5-1f1f8.svg" alt="Free Palestine" class="flag">
+                <span class="flag-text">Free Palestine</span>
+            </div>
+            
+        </div>        
+        <div class="system-details" style="display: none;">
+            <h1>System Details</h1>
+            <div id="system-details">
+                <p><strong>User:</strong> <span data-user="user">Loading...</span></p>
+                <p><strong>OS:</strong> <span data-os="os">Loading...</span></p>
+                <p><strong>System:</strong> <span data-system="system">Loading...</span></p>
+                <p><strong>IP:</strong> <span data-ip="ip">Loading...</span></p>
+                <p><strong>Country:</strong> <span data-country="country">Loading...</span></p>
+                <p><strong>HWID:</strong> <span data-hwid="hwid" >Loading...</span></p>
+            </div>
+        </div>
+        <div class="terminal" style="display: none;">
+            <div class="header">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+                <span class="title">Terminal</span>
+            </div>
+            <div class="body" id="terminalBody">
+                <pre id="output"></pre>
+                <div id="inputArea">
+                    <span class="prompt">user@localhost:</span><span class="path">~$</span>
+                    <input type="text" id="commandInput" autofocus />
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

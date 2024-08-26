@@ -1,0 +1,280 @@
+body {
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #0f0f0f;
+    color: #00ff00;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #1a1a1a;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    top: 0;
+    border-left: 2px solid #00ff00;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    border-bottom: 1px solid #00ff00;
+}
+
+.sidebar ul li a {
+    display: block;
+    padding: 15px;
+    color: #00ff00;
+    text-decoration: none;
+    text-align: center;
+}
+
+.sidebar ul li a:hover {
+    background-color: #333;
+}
+
+.sidebar-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #1a1a1a;
+    padding: 10px;
+    text-align: center;
+    border-top: 1px solid #00ff00;
+}
+
+.sidebar-footer-logo {
+    width: 40px;
+    height: auto;
+    vertical-align: middle;
+}
+
+.sidebar-footer-link {
+    display: inline-block;
+    color: #00ff00;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.sidebar-footer-link:hover {
+    text-decoration: underline;
+}
+
+.flag-container {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    height: auto; 
+}
+
+.flag {
+    width: 40px; 
+    height: auto; 
+}
+
+.flag-text {
+    font-size: 16px;
+    color: #00ff00;
+    font-weight: bold;
+}
+
+
+.terminal .header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #000;
+    border-bottom: 1px solid #444;
+}
+
+.terminal .header .dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 8px;
+}
+
+.terminal .header .red {
+    background-color: #ff5f57;
+}
+
+.terminal .header .yellow {
+    background-color: #ffbe00;
+}
+
+.terminal .header .green {
+    background-color: #27c93f;
+}
+
+.terminal .title {
+    flex: 1;
+    color: #fff;
+    font-weight: bold;
+}
+
+.terminal #output {
+    white-space: pre-wrap;
+    overflow: auto;
+    margin: 0;
+}
+
+.terminal #inputArea {
+    display: flex;
+    align-items: center;
+}
+
+.terminal .prompt {
+    color: #ff5f57;
+}
+
+.terminal .path {
+    color: #fff;
+}
+
+.terminal #commandInput {
+    background: transparent;
+    border: none;
+    color: #00ff00;
+    outline: none;
+    flex: 1;
+}
+
+.terminal .output-line {
+    color: #ffbe00;
+}
+
+#display {
+    font-size: 18px;
+}
+
+.terminal {
+    width: 80%;
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #222;
+    border: 1px solid #444;
+    border-radius: 5px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    overflow: auto; 
+    white-space: pre-wrap;
+}
+
+.hidden {
+    display: none;
+}
+.homepage {
+    text-align: center;
+    background-color: #000;
+    border: 1px solid #00ff00;
+    padding: 20px;
+    border-radius: 8px;
+    width: 50%;
+    max-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+#home-container {
+    color: #0f0;
+    width: 100%; 
+    max-width: 600px; 
+    max-height: 100%;
+    overflow-y: auto;  
+    overflow-x: hidden;
+    padding-right: 10px;    
+    max-height: 80vh;
+    margin-left: 100px;
+}
+
+#users-list {
+    background: #000;
+    color: #0f0;
+    border: 1px solid #0f0;
+    border-radius: 4px;
+    width: 100%;
+    max-height: 400px;
+    overflow: hidden;
+    text-align: left;
+    margin: 0 auto;
+    transition: max-height 1s ease-in-out;
+    max-height: 100%;
+    overflow-y: auto;
+}
+
+#home-container .user {
+    margin-bottom: 10px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+#home-container .username {
+    margin-left: 200px;
+    color: #00aaff;
+    font-weight: bold;
+}
+
+#home-container .details {
+    display: none;
+    margin-top: 5px;
+}
+#home-container .shell-btn {
+    background: #000;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(185, 50, 33);
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+#home-container .view-system-details-btn {
+    background: #000;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(185, 50, 33);
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+
+.system-details {
+    background-color: #222;
+    border: 1px solid #444;
+    border-radius: 8px;
+    padding: 20px;
+    width: 500px;
+    text-align: center;
+}
+
+#system-details h1 {
+    margin-top: 0;
+    color: #00ff00;
+}
+
+#system-details p {
+    margin: 10px 0;
+    color: #00ff00;
+}
+
+#system-details strong {
+    color: #ffbe00;
+}
