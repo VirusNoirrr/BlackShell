@@ -2,8 +2,8 @@
 
 <div align="center">
   <kbd>
-  <a href="https://github.com/VirusNoirrr/InstagramGen">
-    <a href="https://imgbb.com/"><img src="https://i.ibb.co/vc3T3S3/image.png" alt="image" border="0"></a>
+  <a href="https://github.com/VirusNoirrr/BlackShell">
+    <a href="https://imgbb.com/"><img src="https://i.ibb.co/VLLFPm5/image.png" alt="image" border="0"></a>
   </a>
   </kbd>
   
